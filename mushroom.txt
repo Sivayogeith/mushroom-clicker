@@ -1,0 +1,219 @@
+Let's make a game!
+    name:Mushroom Clicker!
+    author:themeowingsage
+    desc:This is for the Lazy Developer Autumn 2024 Game Jam!
+    version:1.0.0
+
+Settings
+    background:https://file.garden/ZxX4npTKxiU0oIqp/Mushroom%20Clicker!/background.png
+
+Resources
+    *mushroom|mushrooms
+        name:Mushroom|Mushrooms
+
+
+Buildings
+    *cursor|cursors
+        name:Cursor|Cursors
+        desc:Clicks the mushroom.<//><b>Effect:</b><.>Produces 1 Mushroom every 2 seconds
+        on tick:yield 0.5 mushroom
+        cost:10 mushrooms
+        
+    *farm|farms
+        name:Farm|Farms
+        desc:Generates mushroom with a mushroom farm.<//><b>Effect:</b><.>Produces 2 Mushrooms per second
+        on tick:yield 2 mushrooms
+        cost:100 mushrooms
+        req:50 mushrooms:earned
+
+    *factory|factorys
+        name:Factory|Factorys
+        desc:Mushroom plant.<//><b>Effect:</b><.>Produces 10 Mushrooms per second
+        on tick:yield 10 mushrooms
+        cost:1000 mushrooms
+        req:800 mushrooms:earned
+        
+    *trader|traders
+        name:Trader|Traders
+        desc:Traders that trade cookies for mushrooms.<//><b>Effect:</b><.>Produces 100 Mushrooms per second
+        on tick:yield 100 mushrooms
+        cost:10000 mushrooms
+        req:8000 mushrooms:earned
+        
+    *magicalwitch|magicalwitches
+        name:Magical Witch|Magical Witches
+        desc:Magically generates mushrooms.<//><b>Effect:</b><.>Produces 300 Mushrooms per second
+        on tick:yield 300 mushrooms
+        cost:90000 mushrooms
+        req:60000 mushrooms:earned
+        
+    *spaceship|spaceships
+        name:Spaceship|Spaceships
+        desc:Ships mushrooms from a mushroom planet.<//><b>Effect:</b><.>Produces 1,000 Mushrooms per second
+        on tick:yield 1000 mushrooms
+        cost:1000000 mushrooms
+        req:800000 mushrooms:earned
+        
+    *luigi|luigis
+        name:Luigi|Luigis
+        desc:Captures all the mushrooms he had stepped on.<//><b>Effect:</b><.>Produces 8,000 Mushrooms per second
+        on tick:yield 8000 mushrooms
+        cost:5000000 mushrooms
+        req:3000000 mushrooms:earned
+        
+    *god|gods
+        name:God|Gods
+        desc:The god of mushrooms at your feet!<//><b>Effect:</b><.>Produces 20,000 Mushrooms per second
+        on tick:yield 20000 mushrooms
+        cost:10000000 mushrooms
+        req:8000000 mushrooms:earned
+        
+    *paradise|paradises
+        name:Paradise|Paradises
+        desc:Garden of Eden for mushrooms.<//><b>Effect:</b><.>Produces 1 million Mushrooms per second
+        on tick:yield 1000000 mushrooms
+        cost:50000000 mushrooms
+        req:30000000 mushrooms:earned
+        
+    *mario|marios
+        name:Mario|Marios
+        desc:The ultimate mushroom squisher himself.<//><b>Effect:</b><.>Produces 10 million Mushrooms per second
+        on tick:yield 10000000 mushrooms
+        cost:1000000000 mushrooms
+        req:50000000 mushrooms:earned
+
+Upgrades
+    *soil
+        name:Soil
+        desc:Generating mushrooms without soil?!<//><b>Effect:</b><.>+1 mushroom/click
+        passive:increase mushroom yield of bigMushroom by 1
+        cost:100 mushrooms
+        req:10 mushrooms:earned
+    
+    *sawdust
+        name:Sawdust
+        desc:Sawdust. You need Sawdust.<//><b>Effect:</b><.>+1 mushroom/click
+        passive:increase mushroom yield of bigMushroom by 1
+        cost:200 mushrooms
+        req:20 mushrooms:earned
+
+    *grain
+        name:Grain
+        desc:Grain is better tho!<//><b>Effect:</b><.>x2 mushroom/click
+        passive:multiply mushroom yield of bigMushroom by 2
+        cost:300 mushrooms
+        req:100 mushrooms:earned
+    
+    *straw
+        name:Straw
+        desc:Hope the cows won't get angry!<//><b>Effect:</b><.>x2 mushroom/click
+        passive:multiply mushroom yield of bigMushroom by 2
+        cost:1000 mushrooms
+        req:300 mushrooms:earned
+    
+    *woodchips
+        name:Wood Chips
+        desc:You don't need 300 farms here.<//><b>Effect:</b><.>x3 mushroom/click<.>mushroom production +5%
+        passive:multiply mushroom yield of bigMushroom by 3
+        passive:multiply yield of mushrooms by 1.05
+        cost:50000 mushrooms
+        req:1000 mushrooms:earned
+    
+    *decayingplant
+        name:Decaying Plant
+        desc:Decaying Plant.<//><b>Effect:</b><.>x3 mushroom/click<.>mushroom production +20%
+        passive:multiply mushroom yield of bigMushroom by 3
+        passive:multiply yield of mushrooms by 1.20
+        cost:500000 mushrooms
+        req:100000 mushrooms:earned
+
+    *buildingUpgrade1
+        name:Five Fingers
+        desc:Use all of the cursor fingers<//><b>Effect:</b><.>Cursor production x5
+        passive:multiply yield of cursor by 5
+        cost:50 mushrooms
+        req:(cursor>=10)
+
+    *buildingUpgrade2
+        name:Ten Fingers
+        desc:Add Five More Fingers!<//><b>Effect:</b><.>Cursor production x5
+        passive:multiply yield of cursor by 5
+        cost:150 mushrooms
+        req:(cursor>=100)
+
+    *buildingUpgrade3
+        name:Mushroom Plants
+        desc:Literally. Genetically modify a mushroom to become a plant.<//><b>Effect:</b><.>Farm production x2
+        passive:multiply yield of farm by 2
+        cost:500 mushrooms
+        req:(farm>=10)
+
+    *buildingUpgrade4
+        name:Mushroom Trees
+        desc:Trees are better than plants!<//><b>Effect:</b><.>Farm production x2
+        passive:multiply yield of farm by 2
+        cost:1000 mushrooms
+        req:(farm>=50)
+
+    *buildingUpgrade5
+        name:78-hour days
+        desc:Best idea ever thought of!<//><b>Effect:</b><.>Factory production x2
+        passive:multiply yield of factory by 2
+        cost:5000 mushrooms
+        req:(factory>=10)
+
+    *buildingUpgrade6
+        name:Child Labor
+        desc:We are in the Mushroom-Verse. Who's gonna arrest us?<//><b>Effect:</b><.>Factory production x2
+        passive:multiply yield of factory by 2
+        cost:10000 mushrooms
+        req:(factory>=50)
+
+    *buildingUpgrade7
+        name:China
+        desc:China is where most mushrooms are from!<//><b>Effect:</b><.>Trader production x2
+        passive:multiply yield of trader by 2
+        cost:50000 mushrooms
+        req:(trader>=10)
+
+    *buildingUpgrade8
+        name:Trading App
+        desc:Makes trading easier.<//><b>Effect:</b><.>Trader production x2
+        passive:multiply yield of trader by 2
+        cost:100000 mushrooms
+        req:(trader>=50)
+
+    *buildingUpgrade9
+        name:Better Wand
+        desc:You never stop needing a better wand. (Unless you have the Elder Wand)<//><b>Effect:</b><.>Magical Witch production x2
+        passive:multiply yield of magicalwitch by 2
+        cost:500000 mushrooms
+        req:(magicalwitch>=10)
+
+    *buildingUpgrade10
+        name:Cookie Bot
+        desc:Cookies are a vital ingredient in magical mushrooms!<//><b>Effect:</b><.>Magical Witch production x2
+        passive:multiply yield of magicalwitch by 2
+        cost:1000000 mushrooms
+        req:(magicalwitch>=50)
+
+    *buildingUpgrade11
+        name:Liquid Hydrogen
+        desc:Better than diesel!<//><b>Effect:</b><.>Spaceship production x2
+        passive:multiply yield of spaceship by 2
+        cost:5000000 mushrooms
+        req:(spaceship>=10)
+
+    *buildingUpgrade12
+        name:Storage Section
+        desc:Can ship more mushrooms now!<//><b>Effect:</b><.>Spaceship production x2
+        passive:multiply yield of spaceship by 2
+        cost:10000000 mushrooms
+
+Buttons
+    *bigMushroom
+        name:Mushroom!
+        desc:CLICK IT
+        on click:yield 1 mushroom
+        class:bigButton hasFlares
+        icon:https://file.garden/ZxX4npTKxiU0oIqp/Mushroom%20Clicker!/bigMushroom.png
