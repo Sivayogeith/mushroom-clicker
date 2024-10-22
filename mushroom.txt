@@ -11,6 +11,10 @@ Resources
     *mushroom|mushrooms
         name:Mushroom|Mushrooms
 
+CSS
+    .building{
+        height: 50px
+    }
 
 Buildings
     *cursor|cursors
@@ -126,6 +130,14 @@ Upgrades
         passive:multiply yield of mushrooms by 1.20
         cost:500000 mushrooms
         req:100000 mushrooms:earned
+    
+    *decayingtree
+        name:Decaying Tree
+        desc:Decaying Tree.<//><b>Effect:</b><.>x5 mushroom/click<.>mushroom production +20%
+        passive:multiply mushroom yield of bigMushroom by 10
+        passive:multiply yield of mushrooms by 1.20
+        cost:1000000 mushrooms
+        req:5000000 mushrooms:earned
 
     *buildingUpgrade1
         name:Five Fingers
@@ -209,7 +221,64 @@ Upgrades
         desc:Can ship more mushrooms now!<//><b>Effect:</b><.>Spaceship production x2
         passive:multiply yield of spaceship by 2
         cost:10000000 mushrooms
+        req:(spaceship>=50)
 
+    *buildingUpgrade13
+        name:Green Hat
+        desc:Luigi's hat is too old, it's time he gets a replacement!<//><b>Effect:</b><.>Luigi production x2
+        passive:multiply yield of luigi by 2
+        cost:50000000 mushrooms
+        req:(luigi>=10)
+
+    *buildingUpgrade14
+        name:Hammer
+        desc:He can now squish and capture mushrooms faster!<//><b>Effect:</b><.>Luigi production x2
+        passive:multiply yield of luigi by 2
+        cost:100000000 mushrooms
+        req:(luigi>=50)
+
+    *buildingUpgrade15
+        name:Mushroom Biryani
+        desc:What's a better offering to a mushroom god?!<//><b>Effect:</b><.>God production x2
+        passive:multiply yield of god by 2
+        cost:500000000 mushrooms
+        req:(god>=10)
+
+    *buildingUpgrade16
+        name:Mushroom Pepper Fry
+        desc:He needs something to go with the biryani!<//><b>Effect:</b><.>God production x2
+        passive:multiply yield of god by 2
+        cost:1000000000 mushrooms
+        req:(god>=50)
+
+    *buildingUpgrade17
+        name:Golden Key
+        desc:Unlocks more parts of the garden!<//><b>Effect:</b><.>Paradise production x2
+        passive:multiply yield of paradise by 2
+        cost:5000000000 mushrooms
+        req:(paradise>=10)
+
+    *buildingUpgrade18
+        name:Diamond Key
+        desc:Unlocks even more parts of the garden!<//><b>Effect:</b><.>Paradise production x2
+        passive:multiply yield of paradise by 2
+        cost:10000000000 mushrooms
+        req:(paradise>=50)
+
+    *buildingUpgrade19
+        name:Super Mushroom
+        desc:Makes him BIG.<//><b>Effect:</b><.>Mario production x2
+        passive:multiply yield of mario by 2
+        cost:50000000000 mushrooms
+        req:(mario>=10)
+
+    *buildingUpgrade20
+        name:Fire Flower
+        desc:Makes him throw fire!<//><b>Effect:</b><.>Mario production x2
+        passive:multiply yield of mario by 2
+        cost:100000000000 mushrooms
+        req:(mario>=50)
+        
 Buttons
     *bigMushroom
         name:Mushroom!
