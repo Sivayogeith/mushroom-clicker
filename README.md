@@ -18,3 +18,7 @@ This game is made with [Idle Game Maker](https://orteil.dashnet.org/igm/). You c
 - **AI Assistance**: Special thanks to ChatGPT for providing invaluable help in converting ideas into code! (and making this readme teehee)
 
 - **Art**: All artwork featured in the game is created by the author, showcasing a unique and personal touch.
+
+- [**Iron Dizaster**](https://youtube.com/playlist?list=PLk6ZXmsEp_yN-z3C_rRZW9O20uil-I1ri&si=2XyFN5tjy80k-pe3): His playlist helped me so much while making this game!
+
+- **Contributors**: Vivibug and Fractyl Cookie on Dashnet Forums Discord.

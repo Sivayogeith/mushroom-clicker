@@ -10,12 +10,55 @@ Settings
 Resources
     *mushroom|mushrooms
         name:Mushroom|Mushrooms
+        icon:https://file.garden/ZxX4npTKxiU0oIqp/Mushroom%20Clicker!/mushroom.png
+
+Layout
+    *main
+        contains:res, buttons
+        *res
+            contains:Resources
+            class:fullWidth
+        *buttons
+        contains:Buttons
+    *store
+        contains:buildings, upgrades, upgradeButtons
+        *buildings
+            contains:BulkDisplay, Buildings
+            header:Buildings
+            tooltip origin:left
+        *upgradeButtons
+            contains:tag:upgradeSwitcher
+        *upgrades
+            contains:Upgrades
+            header:Upgrades
+            costs:hide
+            names:hide
 
 CSS
     .building{
         height: 50px
     }
-
+    .box-header, .box-footer{
+        padding: 8px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    #box-upgrades{
+        top: 32px;
+    }
+    #box-upgradeButtons{
+        width: 50%;
+        left: 50%;
+        height: 32px;
+        overflow-y: scroll;
+    }
+    .upgradeSwitch{
+        height: 32px;
+        width: 50%;
+        margin: 0;
+        float: left;
+    }
+    
 Buildings
     *cursor|cursors
         name:Cursor|Cursors
@@ -87,6 +130,9 @@ Buildings
         req:50000000 mushrooms:earned
 
 Upgrades
+    *TEMPLATE
+        on earn:hide this
+
     *soil
         name:Soil
         desc:Generating mushrooms without soil?!<//><b>Effect:</b><.>+1 mushroom/click
@@ -287,6 +333,25 @@ Buttons
         class:bigButton hasFlares
         icon:https://file.garden/ZxX4npTKxiU0oIqp/Mushroom%20Clicker!/bigMushroom.png
 
+    *ownedUpgrades
+        name:Owned Upgrades
+        tag:upgradeSwitcher
+        class:upgradeSwitch
+        on click: 
+            show :Upgrades:owned
+            hide :Upgrades:notOwned
+            anim glow
+        end
+
+    *availableUpgrades
+        name:Available Upgrades
+        tag:upgradeSwitcher
+        class:upgradeSwitch
+        on click: 
+            show :Upgrades:notOwned
+            hide :Upgrades:owned
+        end
+
 Achievements
     *lovelymushrooms
         name:Lovely Mushrooms
@@ -367,3 +432,9 @@ Achievements
         name:Surprise! What you expected an achievement at 1 god?
         desc:no.
         req:2 gods
+    
+    *justPlainLucky
+        name:Just plain lucky
+        desc:You have a 1 in 1 million chance every second of gaining this achievement.
+        on tick:if (chance(0.0001%)) yield justPlainLucky
+        hidden when 0
