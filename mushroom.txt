@@ -58,7 +58,7 @@ CSS
         margin: 0;
         float: left;
     }
-    
+
 Buildings
     *cursor|cursors
         name:Cursor|Cursors
@@ -73,8 +73,8 @@ Buildings
         cost:100 mushrooms
         req:50 mushrooms:earned
 
-    *factory|factorys
-        name:Factory|Factorys
+    *factory|factories
+        name:Factory|Factories
         desc:Mushroom plant.<//><b>Effect:</b><.>Produces 10 Mushrooms per second
         on tick:yield 10 mushrooms
         cost:1000 mushrooms
@@ -184,6 +184,52 @@ Upgrades
         passive:multiply yield of mushrooms by 1.20
         cost:1000000 mushrooms
         req:5000000 mushrooms:earned
+
+    *deadoak
+        name:Dead Oak Tree
+        desc:Whats better than a normal tree?! Oak Tree.<//><b>Effect:</b><.>x5 mushroom/click<.>mushroom production +30%
+        passive:multiply mushroom yield of bigMushroom by 10
+        passive:multiply yield of mushrooms by 1.30
+        cost:10000000 mushrooms
+        req:10000000 mushrooms:earned
+
+    *dyingforest
+        name:Dying Forest
+        desc:how bout a whole forest of trees?!<//><b>Effect:</b><.>x20 mushroom/click<.>mushroom production +50%
+        passive:multiply mushroom yield of bigMushroom by 20
+        passive:multiply yield of mushrooms by 1.50
+        cost:50000000 mushrooms
+        req:50000000 mushrooms:earned
+
+    *enchantedlogs
+        name:Enchanted Logs
+        desc:Logs enchanted by magic, ideal for mushroom cultivation. ~ <b>ChatGPT</b><//><b>Effect:</b><.>x8 mushroom/click<.>mushroom production +75%
+        passive:multiply mushroom yield of bigMushroom by 8
+        passive:multiply yield of mushrooms by 1.75
+        cost:100000000 mushrooms
+        req:100000000 mushrooms:earned
+
+    *magicalsoil
+        name:Magical Soil
+        desc:magic is the best<//><b>Effect:</b><.>x8 mushroom/click
+        passive:multiply mushroom yield of bigMushroom by 8
+        cost:500000000 mushrooms
+        req:500000000 mushrooms:earned
+
+    *shroomhaven
+        name:Shroom Haven
+        desc:those mushrooms are high on themselves!!!<//><b>Effect:</b><.>x5 mushroom/click
+        passive:multiply mushroom yield of bigMushroom by 5
+        cost:1000000000 mushrooms
+        req:1000000000 mushrooms:earned
+
+    *mushroomworld
+        name:Mushroom World
+        desc:Technically, this is the point of Spaceships. but im out of names. soo<//><b>Effect:</b><.>x1.50 mushroom/click
+        passive:multiply mushroom yield of bigMushroom by 1.50
+        cost:50000000000 mushrooms
+        req:50000000000 mushrooms:earned
+
 
     *buildingUpgrade1
         name:Five Fingers
