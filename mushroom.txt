@@ -211,25 +211,27 @@ Upgrades
 
     *magicalsoil
         name:Magical Soil
-        desc:magic is the best<//><b>Effect:</b><.>x8 mushroom/click
+        desc:magic is the best<//><b>Effect:</b><.>x8 mushroom/click<.>mushroom production +75%
         passive:multiply mushroom yield of bigMushroom by 8
+        passive:multiply yield of mushrooms by 1.75
         cost:500000000 mushrooms
         req:500000000 mushrooms:earned
 
     *shroomhaven
         name:Shroom Haven
-        desc:those mushrooms are high on themselves!!!<//><b>Effect:</b><.>x5 mushroom/click
+        desc:those mushrooms are high on themselves!!!<//><b>Effect:</b><.>x5 mushroom/click<.>mushroom production +100%
         passive:multiply mushroom yield of bigMushroom by 5
+        passive:multiply yield of mushrooms by 2
         cost:1000000000 mushrooms
         req:1000000000 mushrooms:earned
 
     *mushroomworld
         name:Mushroom World
-        desc:Technically, this is the point of Spaceships. but im out of names. soo<//><b>Effect:</b><.>x1.50 mushroom/click
+        desc:Technically, this is the point of Spaceships. but im out of names. soo<//><b>Effect:</b><.>x1.50 mushroom/click<.>mushroom production +50%
         passive:multiply mushroom yield of bigMushroom by 1.50
+        passive:multiply yield of mushrooms by 1.50
         cost:50000000000 mushrooms
         req:50000000000 mushrooms:earned
-
 
     *buildingUpgrade1
         name:Five Fingers
