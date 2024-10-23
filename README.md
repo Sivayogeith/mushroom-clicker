@@ -4,7 +4,7 @@ A Idle Clicker Game made for Lazy Developer Autumn 2024 Game Jam!
 <img width="1920" alt="Screenshot 2024-10-21 at 5 14 37 PM" src="https://github.com/user-attachments/assets/5df08e5f-7a42-490b-87e6-4d9c037b5582">
 
 ## Where to Play
-This game is made with [Idle Game Maker](https://orteil.dashnet.org/igm/). You can play the game by clicking the following link: [Mushroom Clicker!](https://orteil.dashnet.org/igm/index.html?g=ys0Tdq9p)
+This game is made with [Idle Game Maker](https://orteil.dashnet.org/igm/). You can play the game by clicking either of the following links: [IGM](https://orteil.dashnet.org/igm/index.html?g=ys0Tdq9p) or [Github.IO](https://sivayogeith.github.io/mushroom-clicker)
 
 ## How to Play
 1. Click the big mushroom button to collect mushrooms.
