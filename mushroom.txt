@@ -286,3 +286,84 @@ Buttons
         on click:yield 1 mushroom
         class:bigButton hasFlares
         icon:https://file.garden/ZxX4npTKxiU0oIqp/Mushroom%20Clicker!/bigMushroom.png
+
+Achievements
+    *lovelymushrooms
+        name:Lovely Mushrooms
+        desc:Everyone loves Mushrooms!!
+        req:1 mushroom:earned
+
+    *mushrooms4life
+        name:Mushrooms 4 Life!!!
+        desc:Are there any Mushrooms Dryads?!
+        req:1000 mushrooms:earned
+
+    *nintendo
+        name:Nintendo Co. Ltd
+        desc:Pls don't copyright this game.
+        req:100000 mushrooms:earned
+
+    *playbutton
+        name:Where's the Mushroom Play Button?!
+        desc:Yea, Youtube where is it?!
+        req:1000000 mushrooms:earned
+
+    *gemini
+        name:Mmmm, Yeah I think that's enough.
+        desc:I agree, Eating too many mushrooms can cause a variety of side effects, including: Stomach issues, Neurological symptoms, Organ damage, and Other side effects ~ <b>Gemini</b>
+        req:10000000 mushrooms:earned
+
+    *biryani
+        name:Enough to make Mushroom Biryani!
+        desc:This time eat it fully by yourself. Why feed god?!
+        req:50000000 mushrooms:earned
+
+    *goodjobrest
+        name:Good job! Now, you can rest!
+        desc:I certainly don't know if you will listen to me.
+        req:1000000000 mushrooms:earned
+
+    *noresting
+        name:No? You're not gonna rest?
+        desc:Ok then, these kind of achievements will stop coming now.
+        req:5000000000 mushrooms:earned
+
+    *shrooms
+        name:High on an amount of shrooms
+        desc:Vivibug.
+        req:1000000000000 mushrooms:earned
+
+    *nikocado
+        name:That's enough to feed the Nikocado Avocado.
+        desc:You are always 2 steps ahead!
+        req:1000000000000 mushrooms:earned
+
+    *wasted
+        name:Congrats, I have successfully wasted all your time
+        desc:There are no more achievements past this. (Unless, you got 50T before getting all the buildings)
+        req:50000000000000 mushrooms:earned
+
+    *maya
+        name:This world is Maya
+        desc:Of course, It is what did you think?!
+        req:1 magicalwitch
+
+    *traitor
+        name:Trader or Traitor
+        desc:*Creepy music plays*
+        req:1 traders
+
+    *luigicheevo
+        name:Luigi™ Copyright 2012-2021 Spotify AB
+        desc:oops, wrong copyright.
+        req:1 luigi
+
+    *mariocheevo
+        name:Mario™ © 2020 Nintendo.
+        desc:let's goo, did it right this time!
+        req:1 mario
+
+    *godcheevo
+        name:Surprise! What you expected an achievement at 1 god?
+        desc:no.
+        req:2 gods
